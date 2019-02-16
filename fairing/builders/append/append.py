@@ -19,8 +19,6 @@ logger = logging.getLogger(__name__)
 class AppendBuilder(BaseBuilder):
     """Builds a docker image by appending a new layer tarball to an existing
     base image. Does not require docker and runs in userspace.
-
-
      Args:
         registry {str} -- Registry to push image to. Required.
                           Example: gcr.io/kubeflow-images (default: {None})
